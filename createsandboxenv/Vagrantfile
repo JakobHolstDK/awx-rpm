@@ -1,0 +1,33 @@
+Vagrant.require_version ">= 2.1.0" # 2.1.0 minimum required for triggers
+
+org  = ENV['RH_SUBSCRIPTION_MANAGER_ORG']
+key  = ENV['RH_SUBSCRIPTION_MANAGER_KEY']
+if !org or !key
+  puts 'Required environment variables not found. Please set RH_SUBSCRIPTION_MANAGER_ORG and RH_SUBSCRIPTION_MANAGER_KEY'
+  abort
+end
+
+register_script = %{
+if ! subscription-manager status; then
+  sudo subscription-manager register --org=#{org} --activationkey=#{key} --force
+fi
+}
+
+unregister_script = %{
+  sudo subscription-manager unregister 
+}
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "rhel8"
+  config.vm.provision "shell", inline: register_script
+  config.vm.synced_folder '.', '/vagrant', :disabled => true
+  config.ssh.username = 'root'
+  config.ssh.password = 'ixj90j2s'
+  config.trigger.before :destroy do |trigger|
+    trigger.name = "Before Destroy trigger"
+    trigger.info = "Unregistering this VM from RedHat Subscription Manager..."
+    trigger.warn = "If this fails, unregister VMs manually at https://access.redhat.com/management/subscriptions"
+    trigger.run_remote = {inline: unregister_script}
+    trigger.on_error = :continue
+  end # trigger.before :destroy
+end # vagrant configure

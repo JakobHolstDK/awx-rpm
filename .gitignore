@@ -2,3 +2,6 @@ parser/fetched_all.json
 parser/out.json
 parser/packages/
 venv/
+createsandboxenv/packer_example_libvirt.box
+createsandboxenv/vagrant-libvirt
+.idea/
