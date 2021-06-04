@@ -1,3 +1,5 @@
+#!/usr/bin/env python 
+
 import json
 import os
 import re
@@ -6,6 +8,7 @@ from collections import deque
 
 import requests
 import requirements
+
 from pip._internal.index.collector import LinkCollector
 from pip._internal.index.package_finder import PackageFinder
 from pip._internal.models.format_control import FormatControl
@@ -207,6 +210,9 @@ if __name__ == '__main__':
         _set_definite_versions(fetched_list)
         with open('out.json', 'w') as out:
             json.dump(fetched_list, out, indent=4)
+
+
+
 
     download_all_packages('out.json')
 

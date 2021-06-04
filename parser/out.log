@@ -1,0 +1,1161 @@
+rEquirement already satisfied: adal==1.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.2.2)
+Requirement already satisfied: cryptography>=1.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal==1.2.2) (3.4.7)
+Requirement already satisfied: PyJWT>=1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal==1.2.2) (2.1.0)
+Requirement already satisfied: python-dateutil>=2.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal==1.2.2) (2.8.1)
+Requirement already satisfied: requests>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal==1.2.2) (2.23.0)
+Requirement already satisfied: cffi>=1.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=1.1.0->adal==1.2.2) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=1.1.0->adal==1.2.2) (2.20)
+Requirement already satisfied: six>=1.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-dateutil>=2.1.0->adal==1.2.2) (1.14.0)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal==1.2.2) (1.25.8)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal==1.2.2) (2021.5.30)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal==1.2.2) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal==1.2.2) (2.9)
+Requirement already satisfied: aiohttp==3.6.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.6.2)
+Requirement already satisfied: multidict<5.0,>=4.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from aiohttp==3.6.2) (4.7.5)
+Requirement already satisfied: attrs>=17.3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from aiohttp==3.6.2) (19.3.0)
+Requirement already satisfied: chardet<4.0,>=2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from aiohttp==3.6.2) (3.0.4)
+Requirement already satisfied: async-timeout<4.0,>=3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from aiohttp==3.6.2) (3.0.1)
+Requirement already satisfied: yarl<2.0,>=1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from aiohttp==3.6.2) (1.4.2)
+Requirement already satisfied: idna>=2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from yarl<2.0,>=1.0->aiohttp==3.6.2) (2.9)
+Requirement already satisfied: aioredis==1.3.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.3.1)
+Requirement already satisfied: hiredis in /root/awx-rpm/venv/lib/python3.8/site-packages (from aioredis==1.3.1) (1.0.1)
+Requirement already satisfied: async-timeout in /root/awx-rpm/venv/lib/python3.8/site-packages (from aioredis==1.3.1) (3.0.1)
+Requirement already satisfied: ansible-runner==2.0.0a2 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.0.0a2)
+Requirement already satisfied: PyYAML in /root/awx-rpm/venv/lib/python3.8/site-packages (from ansible-runner==2.0.0a2) (5.4.1)
+Requirement already satisfied: python-daemon in /root/awx-rpm/venv/lib/python3.8/site-packages (from ansible-runner==2.0.0a2) (2.2.4)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from ansible-runner==2.0.0a2) (1.14.0)
+Requirement already satisfied: pexpect>=4.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from ansible-runner==2.0.0a2) (4.7.0)
+Requirement already satisfied: ptyprocess>=0.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pexpect>=4.5->ansible-runner==2.0.0a2) (0.6.0)
+Requirement already satisfied: lockfile>=0.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-daemon->ansible-runner==2.0.0a2) (0.12.2)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-daemon->ansible-runner==2.0.0a2) (41.6.0)
+Requirement already satisfied: docutils in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-daemon->ansible-runner==2.0.0a2) (0.16)
+Requirement already satisfied: ansiconv==1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.0)
+Requirement already satisfied: asciichartpy==1.5.25 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.5.25)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from asciichartpy==1.5.25) (41.6.0)
+Collecting asgiref==3.2.5
+  Using cached asgiref-3.2.5-py2.py3-none-any.whl (19 kB)
+Installing collected packages: asgiref
+  Attempting uninstall: asgiref
+    Found existing installation: asgiref 3.3.4
+    Uninstalling asgiref-3.3.4:
+      Successfully uninstalled asgiref-3.3.4
+Successfully installed asgiref-3.2.5
+Requirement already satisfied: async-timeout==3.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.1)
+Requirement already satisfied: attrs==19.3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (19.3.0)
+Requirement already satisfied: autobahn==20.12.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (20.12.3)
+Requirement already satisfied: cryptography>=2.9.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn==20.12.3) (3.4.7)
+Requirement already satisfied: txaio>=20.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn==20.12.3) (20.12.1)
+Requirement already satisfied: hyperlink>=20.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn==20.12.3) (20.0.1)
+Requirement already satisfied: cffi>=1.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.9.2->autobahn==20.12.3) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=2.9.2->autobahn==20.12.3) (2.20)
+Requirement already satisfied: idna>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from hyperlink>=20.0.1->autobahn==20.12.3) (2.9)
+Requirement already satisfied: automat==20.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (20.2.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from automat==20.2.0) (1.14.0)
+Requirement already satisfied: attrs>=19.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from automat==20.2.0) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.25)
+Requirement already satisfied: azure-keyvault==1.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.0)
+Requirement already satisfied: cryptography>=2.1.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from azure-keyvault==1.1.0) (3.4.7)
+Requirement already satisfied: azure-common~=1.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from azure-keyvault==1.1.0) (1.1.25)
+Requirement already satisfied: msrestazure<2.0.0,>=0.4.32 in /root/awx-rpm/venv/lib/python3.8/site-packages (from azure-keyvault==1.1.0) (0.6.3)
+Requirement already satisfied: requests>=2.18.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from azure-keyvault==1.1.0) (2.23.0)
+Requirement already satisfied: azure-nspkg>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from azure-keyvault==1.1.0) (3.0.2)
+Requirement already satisfied: msrest>=0.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from azure-keyvault==1.1.0) (0.6.11)
+Requirement already satisfied: cffi>=1.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.1.4->azure-keyvault==1.1.0) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=2.1.4->azure-keyvault==1.1.0) (2.20)
+Requirement already satisfied: requests-oauthlib>=0.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest>=0.5.0->azure-keyvault==1.1.0) (1.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest>=0.5.0->azure-keyvault==1.1.0) (2021.5.30)
+Requirement already satisfied: isodate>=0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest>=0.5.0->azure-keyvault==1.1.0) (0.6.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from isodate>=0.6.0->msrest>=0.5.0->azure-keyvault==1.1.0) (1.14.0)
+Requirement already satisfied: adal<2.0.0,>=0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrestazure<2.0.0,>=0.4.32->azure-keyvault==1.1.0) (1.2.2)
+Requirement already satisfied: python-dateutil>=2.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal<2.0.0,>=0.6.0->msrestazure<2.0.0,>=0.4.32->azure-keyvault==1.1.0) (2.8.1)
+Requirement already satisfied: PyJWT>=1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal<2.0.0,>=0.6.0->msrestazure<2.0.0,>=0.4.32->azure-keyvault==1.1.0) (2.1.0)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.18.4->azure-keyvault==1.1.0) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.18.4->azure-keyvault==1.1.0) (2.9)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.18.4->azure-keyvault==1.1.0) (1.25.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib>=0.5.0->msrest>=0.5.0->azure-keyvault==1.1.0) (3.1.0)
+Requirement already satisfied: azure-nspkg==3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.2)
+Requirement already satisfied: cachetools==4.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.0.0)
+Requirement already satisfied: cffi==1.14.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi==1.14.0) (2.20)
+Requirement already satisfied: channels-redis==3.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.1.0)
+Requirement already satisfied: asgiref~=3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels-redis==3.1.0) (3.2.5)
+Requirement already satisfied: channels~=2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels-redis==3.1.0) (2.4.0)
+Requirement already satisfied: aioredis~=1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels-redis==3.1.0) (1.3.1)
+Requirement already satisfied: msgpack~=1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels-redis==3.1.0) (1.0.0)
+Requirement already satisfied: async-timeout in /root/awx-rpm/venv/lib/python3.8/site-packages (from aioredis~=1.0->channels-redis==3.1.0) (3.0.1)
+Requirement already satisfied: hiredis in /root/awx-rpm/venv/lib/python3.8/site-packages (from aioredis~=1.0->channels-redis==3.1.0) (1.0.1)
+Requirement already satisfied: Django>=2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels~=2.2->channels-redis==3.1.0) (2.2.16)
+Requirement already satisfied: daphne~=2.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels~=2.2->channels-redis==3.1.0) (2.4.1)
+Requirement already satisfied: twisted[tls]>=18.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (21.2.0)
+Requirement already satisfied: autobahn>=0.18 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (20.12.3)
+Requirement already satisfied: txaio>=20.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (20.12.1)
+Requirement already satisfied: cryptography>=2.9.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (3.4.7)
+Requirement already satisfied: hyperlink>=20.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (20.0.1)
+Requirement already satisfied: cffi>=1.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.9.2->autobahn>=0.18->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=2.9.2->autobahn>=0.18->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (2.20)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->channels~=2.2->channels-redis==3.1.0) (0.3.1)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->channels~=2.2->channels-redis==3.1.0) (2019.3)
+Requirement already satisfied: idna>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from hyperlink>=20.0.1->autobahn>=0.18->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (2.9)
+Requirement already satisfied: zope.interface>=4.4.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (5.0.0)
+Requirement already satisfied: attrs>=19.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (19.3.0)
+Requirement already satisfied: constantly>=15.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (15.1.0)
+Requirement already satisfied: incremental>=16.10.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (17.5.0)
+Requirement already satisfied: Automat>=0.8.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (20.2.0)
+Requirement already satisfied: pyopenssl>=16.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (19.1.0)
+Requirement already satisfied: service-identity>=18.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (18.1.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from Automat>=0.8.0->twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (1.14.0)
+Requirement already satisfied: pyasn1-modules in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity>=18.1.0->twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (0.2.8)
+Requirement already satisfied: pyasn1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity>=18.1.0->twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (0.4.8)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from zope.interface>=4.4.2->twisted[tls]>=18.7->daphne~=2.3->channels~=2.2->channels-redis==3.1.0) (41.6.0)
+Requirement already satisfied: channels==2.4.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.4.0)
+Requirement already satisfied: daphne~=2.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels==2.4.0) (2.4.1)
+Requirement already satisfied: asgiref~=3.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels==2.4.0) (3.2.5)
+Requirement already satisfied: Django>=2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from channels==2.4.0) (2.2.16)
+Requirement already satisfied: autobahn>=0.18 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne~=2.3->channels==2.4.0) (20.12.3)
+Requirement already satisfied: twisted[tls]>=18.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne~=2.3->channels==2.4.0) (21.2.0)
+Requirement already satisfied: cryptography>=2.9.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne~=2.3->channels==2.4.0) (3.4.7)
+Requirement already satisfied: txaio>=20.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne~=2.3->channels==2.4.0) (20.12.1)
+Requirement already satisfied: hyperlink>=20.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne~=2.3->channels==2.4.0) (20.0.1)
+Requirement already satisfied: cffi>=1.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.9.2->autobahn>=0.18->daphne~=2.3->channels==2.4.0) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi>=1.12->cryptography>=2.9.2->autobahn>=0.18->daphne~=2.3->channels==2.4.0) (2.20)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->channels==2.4.0) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->channels==2.4.0) (0.3.1)
+Requirement already satisfied: idna>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from hyperlink>=20.0.1->autobahn>=0.18->daphne~=2.3->channels==2.4.0) (2.9)
+Requirement already satisfied: attrs>=19.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (19.3.0)
+Requirement already satisfied: constantly>=15.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (15.1.0)
+Requirement already satisfied: incremental>=16.10.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (17.5.0)
+Requirement already satisfied: Automat>=0.8.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (20.2.0)
+Requirement already satisfied: zope.interface>=4.4.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (5.0.0)
+Requirement already satisfied: service-identity>=18.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (18.1.0)
+Requirement already satisfied: pyopenssl>=16.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (19.1.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from Automat>=0.8.0->twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (1.14.0)
+Requirement already satisfied: pyasn1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity>=18.1.0->twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (0.4.8)
+Requirement already satisfied: pyasn1-modules in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity>=18.1.0->twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (0.2.8)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from zope.interface>=4.4.2->twisted[tls]>=18.7->daphne~=2.3->channels==2.4.0) (41.6.0)
+Requirement already satisfied: chardet==3.0.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.4)
+Requirement already satisfied: click==7.1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (7.1.2)
+Requirement already satisfied: constantly==15.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (15.1.0)
+Collecting cryptography==2.9.2
+  Using cached cryptography-2.9.2-cp35-abi3-manylinux2010_x86_64.whl (2.7 MB)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography==2.9.2) (1.14.0)
+Requirement already satisfied: six>=1.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography==2.9.2) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography==2.9.2) (2.20)
+Installing collected packages: cryptography
+  Attempting uninstall: cryptography
+    Found existing installation: cryptography 3.4.7
+    Uninstalling cryptography-3.4.7:
+      Successfully uninstalled cryptography-3.4.7
+Successfully installed cryptography-2.9.2
+Requirement already satisfied: cython==0.29.22 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.29.22)
+Requirement already satisfied: daphne==2.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.4.1)
+Requirement already satisfied: twisted[tls]>=18.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne==2.4.1) (21.2.0)
+Requirement already satisfied: autobahn>=0.18 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne==2.4.1) (20.12.3)
+Requirement already satisfied: asgiref~=3.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from daphne==2.4.1) (3.2.5)
+Requirement already satisfied: txaio>=20.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne==2.4.1) (20.12.1)
+Requirement already satisfied: hyperlink>=20.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne==2.4.1) (20.0.1)
+Requirement already satisfied: cryptography>=2.9.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from autobahn>=0.18->daphne==2.4.1) (2.9.2)
+Requirement already satisfied: six>=1.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.9.2->autobahn>=0.18->daphne==2.4.1) (1.14.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.9.2->autobahn>=0.18->daphne==2.4.1) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography>=2.9.2->autobahn>=0.18->daphne==2.4.1) (2.20)
+Requirement already satisfied: idna>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from hyperlink>=20.0.1->autobahn>=0.18->daphne==2.4.1) (2.9)
+Requirement already satisfied: Automat>=0.8.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (20.2.0)
+Requirement already satisfied: constantly>=15.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (15.1.0)
+Requirement already satisfied: zope.interface>=4.4.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (5.0.0)
+Requirement already satisfied: attrs>=19.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (19.3.0)
+Requirement already satisfied: incremental>=16.10.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (17.5.0)
+Requirement already satisfied: pyopenssl>=16.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (19.1.0)
+Requirement already satisfied: service-identity>=18.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted[tls]>=18.7->daphne==2.4.1) (18.1.0)
+Requirement already satisfied: pyasn1-modules in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity>=18.1.0->twisted[tls]>=18.7->daphne==2.4.1) (0.2.8)
+Requirement already satisfied: pyasn1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity>=18.1.0->twisted[tls]>=18.7->daphne==2.4.1) (0.4.8)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from zope.interface>=4.4.2->twisted[tls]>=18.7->daphne==2.4.1) (41.6.0)
+Requirement already satisfied: defusedxml==0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.6.0)
+Requirement already satisfied: dictdiffer==0.8.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.8.1)
+Requirement already satisfied: distro==1.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.5.0)
+Collecting django-auth-ldap==2.1.0
+  Using cached django_auth_ldap-2.1.0-py3-none-any.whl (20 kB)
+Requirement already satisfied: Django>=1.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-auth-ldap==2.1.0) (2.2.16)
+Collecting python-ldap>=3.1
+  Using cached python-ldap-3.3.1.tar.gz (379 kB)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.11->django-auth-ldap==2.1.0) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.11->django-auth-ldap==2.1.0) (0.3.1)
+Requirement already satisfied: pyasn1>=0.3.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-ldap>=3.1->django-auth-ldap==2.1.0) (0.4.8)
+Requirement already satisfied: pyasn1_modules>=0.1.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-ldap>=3.1->django-auth-ldap==2.1.0) (0.2.8)
+Building wheels for collected packages: python-ldap
+  Building wheel for python-ldap (setup.py): started
+  Building wheel for python-ldap (setup.py): finished with status 'done'
+  Created wheel for python-ldap: filename=python_ldap-3.3.1-cp38-cp38-linux_x86_64.whl size=342139 sha256=3c64511575de3a2a778044d118604fb57d0ba8f2b6e9702cdc0e21251d06debe
+  Stored in directory: /root/.cache/pip/wheels/db/e9/83/84ab9509d4cba1c1f74e929ffa8890184c23b95cbcc5d0b0a9
+Successfully built python-ldap
+Installing collected packages: python-ldap, django-auth-ldap
+Successfully installed django-auth-ldap-2.1.0 python-ldap-3.3.1
+Requirement already satisfied: django-cors-headers==3.7.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.7.0)
+Requirement already satisfied: Django>=2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-cors-headers==3.7.0) (2.2.16)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->django-cors-headers==3.7.0) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->django-cors-headers==3.7.0) (0.3.1)
+Requirement already satisfied: django-crum==0.7.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.7.5)
+Requirement already satisfied: django>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-crum==0.7.5) (2.2.16)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django>=1.8->django-crum==0.7.5) (0.3.1)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from django>=1.8->django-crum==0.7.5) (2019.3)
+Requirement already satisfied: django-extensions==2.2.9 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.2.9)
+Requirement already satisfied: six>=1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-extensions==2.2.9) (1.14.0)
+Requirement already satisfied: django-guid==2.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.2.0)
+Requirement already satisfied: Django>=2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-guid==2.2.0) (2.2.16)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->django-guid==2.2.0) (0.3.1)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=2.2->django-guid==2.2.0) (2019.3)
+Requirement already satisfied: django-jsonfield==1.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.2.0)
+Requirement already satisfied: Django>=1.9 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-jsonfield==1.2.0) (2.2.16)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.9->django-jsonfield==1.2.0) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.9->django-jsonfield==1.2.0) (0.3.1)
+Requirement already satisfied: django-oauth-toolkit==1.1.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.3)
+Requirement already satisfied: django>=1.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-oauth-toolkit==1.1.3) (2.2.16)
+Requirement already satisfied: requests>=2.13.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-oauth-toolkit==1.1.3) (2.23.0)
+Requirement already satisfied: oauthlib>=2.0.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-oauth-toolkit==1.1.3) (3.1.0)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django>=1.11->django-oauth-toolkit==1.1.3) (0.3.1)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from django>=1.11->django-oauth-toolkit==1.1.3) (2019.3)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.13.0->django-oauth-toolkit==1.1.3) (2.9)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.13.0->django-oauth-toolkit==1.1.3) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.13.0->django-oauth-toolkit==1.1.3) (1.25.8)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.13.0->django-oauth-toolkit==1.1.3) (2021.5.30)
+Requirement already satisfied: django-pglocks==1.0.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.4)
+Requirement already satisfied: six>=1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-pglocks==1.0.4) (1.14.0)
+Requirement already satisfied: django-polymorphic==2.1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.1.2)
+Requirement already satisfied: Django>=1.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-polymorphic==2.1.2) (2.2.16)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.11->django-polymorphic==2.1.2) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.11->django-polymorphic==2.1.2) (0.3.1)
+Requirement already satisfied: django-qsstats-magic==1.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.0)
+Requirement already satisfied: django-radius==1.3.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.3.3)
+Requirement already satisfied: pyrad>=1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-radius==1.3.3) (2.3)
+Requirement already satisfied: future==0.16.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-radius==1.3.3) (0.16.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyrad>=1.2->django-radius==1.3.3) (1.14.0)
+Requirement already satisfied: netaddr in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyrad>=1.2->django-radius==1.3.3) (0.7.19)
+Requirement already satisfied: django-redis==4.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.5.0)
+Requirement already satisfied: redis>=2.10.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-redis==4.5.0) (3.4.1)
+Requirement already satisfied: django-solo==1.1.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.3)
+Requirement already satisfied: django-split-settings==1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.0)
+Requirement already satisfied: django-taggit==1.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.2.0)
+Requirement already satisfied: Django>=1.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django-taggit==1.2.0) (2.2.16)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.11->django-taggit==1.2.0) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from Django>=1.11->django-taggit==1.2.0) (0.3.1)
+Requirement already satisfied: django==2.2.16 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.2.16)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from django==2.2.16) (2019.3)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django==2.2.16) (0.3.1)
+Requirement already satisfied: djangorestframework-yaml==1.0.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.3)
+Requirement already satisfied: PyYAML>=3.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (from djangorestframework-yaml==1.0.3) (5.4.1)
+Requirement already satisfied: djangorestframework==3.12.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.12.1)
+Requirement already satisfied: django>=2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from djangorestframework==3.12.1) (2.2.16)
+Requirement already satisfied: sqlparse>=0.2.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from django>=2.2->djangorestframework==3.12.1) (0.3.1)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from django>=2.2->djangorestframework==3.12.1) (2019.3)
+Requirement already satisfied: docutils==0.16 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.16)
+Requirement already satisfied: future==0.16.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.16.0)
+Requirement already satisfied: gitdb==4.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.0.2)
+Requirement already satisfied: smmap<4,>=3.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from gitdb==4.0.2) (3.0.1)
+Requirement already satisfied: gitpython==3.1.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.1.7)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from gitpython==3.1.7) (4.0.2)
+Requirement already satisfied: smmap<4,>=3.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->gitpython==3.1.7) (3.0.1)
+Requirement already satisfied: google-auth==1.11.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.11.3)
+Requirement already satisfied: six>=1.9.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth==1.11.3) (1.14.0)
+Requirement already satisfied: setuptools>=40.3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth==1.11.3) (41.6.0)
+Requirement already satisfied: rsa<4.1,>=3.1.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth==1.11.3) (4.0)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth==1.11.3) (4.0.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth==1.11.3) (0.2.8)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth==1.11.3) (0.4.8)
+Requirement already satisfied: hiredis==1.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.1)
+Requirement already satisfied: hyperlink==20.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (20.0.1)
+Requirement already satisfied: idna>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from hyperlink==20.0.1) (2.9)
+Requirement already satisfied: idna==2.9 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.9)
+Requirement already satisfied: incremental==17.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (17.5.0)
+Requirement already satisfied: irc==18.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (18.0.0)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (2019.3)
+Requirement already satisfied: tempora>=1.6 in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (2.1.0)
+Requirement already satisfied: jaraco.logging in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (3.0.0)
+Requirement already satisfied: jaraco.collections in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (3.0.0)
+Requirement already satisfied: jaraco.functools>=1.20 in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (3.0.0)
+Requirement already satisfied: jaraco.text in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (3.2.0)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (8.2.0)
+Requirement already satisfied: jaraco.stream in /root/awx-rpm/venv/lib/python3.8/site-packages (from irc==18.0.0) (3.0.0)
+Requirement already satisfied: jaraco.classes in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.collections->irc==18.0.0) (3.1.0)
+Requirement already satisfied: six>=1.7.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.collections->irc==18.0.0) (1.14.0)
+Requirement already satisfied: isodate==0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.6.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from isodate==0.6.0) (1.14.0)
+Requirement already satisfied: jaraco.classes==3.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.1.0)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.classes==3.1.0) (8.2.0)
+Requirement already satisfied: jaraco.collections==3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.0)
+Requirement already satisfied: six>=1.7.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.collections==3.0.0) (1.14.0)
+Requirement already satisfied: jaraco.text in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.collections==3.0.0) (3.2.0)
+Requirement already satisfied: jaraco.classes in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.collections==3.0.0) (3.1.0)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.classes->jaraco.collections==3.0.0) (8.2.0)
+Requirement already satisfied: jaraco.functools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.text->jaraco.collections==3.0.0) (3.0.0)
+Requirement already satisfied: jaraco.functools==3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.0)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.functools==3.0.0) (8.2.0)
+Requirement already satisfied: jaraco.logging==3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.0)
+Requirement already satisfied: tempora in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.logging==3.0.0) (2.1.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.logging==3.0.0) (1.14.0)
+Requirement already satisfied: jaraco.functools>=1.20 in /root/awx-rpm/venv/lib/python3.8/site-packages (from tempora->jaraco.logging==3.0.0) (3.0.0)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from tempora->jaraco.logging==3.0.0) (2019.3)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.functools>=1.20->tempora->jaraco.logging==3.0.0) (8.2.0)
+Requirement already satisfied: jaraco.stream==3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.0)
+Requirement already satisfied: jaraco.text==3.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.2.0)
+Requirement already satisfied: jaraco.functools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.text==3.2.0) (3.0.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.text==3.2.0) (1.14.0)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.functools->jaraco.text==3.2.0) (8.2.0)
+Requirement already satisfied: jinja2==2.11.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.11.2)
+Requirement already satisfied: MarkupSafe>=0.23 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jinja2==2.11.2) (1.1.1)
+Requirement already satisfied: json-log-formatter==0.3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.3.0)
+Requirement already satisfied: jsonschema==3.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.2.0)
+Requirement already satisfied: attrs>=17.4.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jsonschema==3.2.0) (19.3.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jsonschema==3.2.0) (0.15.7)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jsonschema==3.2.0) (41.6.0)
+Requirement already satisfied: six>=1.11.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jsonschema==3.2.0) (1.14.0)
+Requirement already satisfied: kubernetes==11.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (11.0.0)
+Requirement already satisfied: setuptools>=21.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (41.6.0)
+Requirement already satisfied: requests-oauthlib in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (1.3.0)
+Requirement already satisfied: pyyaml>=3.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (5.4.1)
+Requirement already satisfied: six>=1.9.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (1.14.0)
+Requirement already satisfied: requests in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (2.23.0)
+Requirement already satisfied: google-auth>=1.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (1.11.3)
+Requirement already satisfied: urllib3>=1.24.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (1.25.8)
+Requirement already satisfied: certifi>=14.05.14 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (2021.5.30)
+Requirement already satisfied: python-dateutil>=2.5.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (2.8.1)
+Requirement already satisfied: websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes==11.0.0) (0.57.0)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth>=1.0.1->kubernetes==11.0.0) (4.0.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth>=1.0.1->kubernetes==11.0.0) (0.2.8)
+Requirement already satisfied: rsa<4.1,>=3.1.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth>=1.0.1->kubernetes==11.0.0) (4.0)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth>=1.0.1->kubernetes==11.0.0) (0.4.8)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests->kubernetes==11.0.0) (2.9)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests->kubernetes==11.0.0) (3.0.4)
+Requirement already satisfied: oauthlib>=3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib->kubernetes==11.0.0) (3.1.0)
+Start
+### In fetch_all_from_source ###
+### Download packages ###
+download_best_package: adal
+get_best_package: adal
+pip install adal==1.2.2
+### Download packages ###
+download_best_package: aiohttp
+get_best_package: aiohttp
+pip install aiohttp==3.6.2
+### Download packages ###
+download_best_package: aioredis
+get_best_package: aioredis
+pip install aioredis==1.3.1
+### Download packages ###
+download_best_package: ansible-runner
+get_best_package: ansible-runner
+pip install ansible-runner==2.0.0a2
+### Download packages ###
+download_best_package: ansiconv
+get_best_package: ansiconv
+pip install ansiconv==1.0.0
+### Download packages ###
+download_best_package: asciichartpy
+get_best_package: asciichartpy
+pip install asciichartpy==1.5.25
+### Download packages ###
+download_best_package: asgiref
+get_best_package: asgiref
+pip install asgiref==3.2.5
+### Download packages ###
+download_best_package: async-timeout
+get_best_package: async-timeout
+pip install async-timeout==3.0.1
+### Download packages ###
+download_best_package: attrs
+get_best_package: attrs
+pip install attrs==19.3.0
+### Download packages ###
+download_best_package: autobahn
+get_best_package: autobahn
+pip install autobahn==20.12.3
+### Download packages ###
+download_best_package: automat
+get_best_package: automat
+pip install automat==20.2.0
+### Download packages ###
+download_best_package: azure-common
+get_best_package: azure-common
+pip install azure-common==1.1.25
+### Download packages ###
+download_best_package: azure-keyvault
+get_best_package: azure-keyvault
+pip install azure-keyvault==1.1.0
+### Download packages ###
+download_best_package: azure-nspkg
+get_best_package: azure-nspkg
+pip install azure-nspkg==3.0.2
+### Download packages ###
+download_best_package: cachetools
+get_best_package: cachetools
+pip install cachetools==4.0.0
+### Download packages ###
+download_best_package: cffi
+get_best_package: cffi
+pip install cffi==1.14.0
+### Download packages ###
+download_best_package: channels-redis
+get_best_package: channels-redis
+pip install channels-redis==3.1.0
+### Download packages ###
+download_best_package: channels
+get_best_package: channels
+pip install channels==2.4.0
+### Download packages ###
+download_best_package: chardet
+get_best_package: chardet
+pip install chardet==3.0.4
+### Download packages ###
+download_best_package: click
+get_best_package: click
+pip install click==7.1.2
+### Download packages ###
+download_best_package: constantly
+get_best_package: constantly
+pip install constantly==15.1.0
+### Download packages ###
+download_best_package: cryptography
+get_best_package: cryptography
+pip install cryptography==2.9.2
+### Download packages ###
+download_best_package: cython
+get_best_package: cython
+pip install cython==0.29.22
+### Download packages ###
+download_best_package: daphne
+get_best_package: daphne
+pip install daphne==2.4.1
+### Download packages ###
+download_best_package: defusedxml
+get_best_package: defusedxml
+pip install defusedxml==0.6.0
+### Download packages ###
+download_best_package: dictdiffer
+get_best_package: dictdiffer
+pip install dictdiffer==0.8.1
+### Download packages ###
+download_best_package: distro
+get_best_package: distro
+pip install distro==1.5.0
+### Download packages ###
+download_best_package: django-auth-ldap
+get_best_package: django-auth-ldap
+pip install django-auth-ldap==2.1.0
+### Download packages ###
+download_best_package: django-cors-headers
+get_best_package: django-cors-headers
+pip install django-cors-headers==3.7.0
+### Download packages ###
+download_best_package: django-crum
+get_best_package: django-crum
+pip install django-crum==0.7.5
+### Download packages ###
+download_best_package: django-extensions
+get_best_package: django-extensions
+pip install django-extensions==2.2.9
+### Download packages ###
+download_best_package: django-guid
+get_best_package: django-guid
+pip install django-guid==2.2.0
+### Download packages ###
+download_best_package: django-jsonfield
+get_best_package: django-jsonfield
+pip install django-jsonfield==1.2.0
+### Download packages ###
+download_best_package: django-oauth-toolkit
+get_best_package: django-oauth-toolkit
+pip install django-oauth-toolkit==1.1.3
+### Download packages ###
+download_best_package: django-pglocks
+get_best_package: django-pglocks
+pip install django-pglocks==1.0.4
+### Download packages ###
+download_best_package: django-polymorphic
+get_best_package: django-polymorphic
+pip install django-polymorphic==2.1.2
+### Download packages ###
+download_best_package: django-qsstats-magic
+get_best_package: django-qsstats-magic
+pip install django-qsstats-magic==1.1.0
+### Download packages ###
+download_best_package: django-radius
+get_best_package: django-radius
+pip install django-radius==1.3.3
+### Download packages ###
+download_best_package: django-redis
+get_best_package: django-redis
+pip install django-redis==4.5.0
+### Download packages ###
+download_best_package: django-solo
+get_best_package: django-solo
+pip install django-solo==1.1.3
+### Download packages ###
+download_best_package: django-split-settings
+get_best_package: django-split-settings
+pip install django-split-settings==1.0.0
+### Download packages ###
+download_best_package: django-taggit
+get_best_package: django-taggit
+pip install django-taggit==1.2.0
+### Download packages ###
+download_best_package: django
+get_best_package: django
+pip install django==2.2.16
+### Download packages ###
+download_best_package: djangorestframework-yaml
+get_best_package: djangorestframework-yaml
+pip install djangorestframework-yaml==1.0.3
+### Download packages ###
+download_best_package: djangorestframework
+get_best_package: djangorestframework
+pip install djangorestframework==3.12.1
+### Download packages ###
+download_best_package: docutils
+get_best_package: docutils
+pip install docutils==0.16
+### Download packages ###
+download_best_package: future
+get_best_package: future
+pip install future==0.16.0
+### Download packages ###
+download_best_package: gitdb
+get_best_package: gitdb
+pip install gitdb==4.0.2
+### Download packages ###
+download_best_package: gitpython
+get_best_package: gitpython
+pip install gitpython==3.1.7
+### Download packages ###
+download_best_package: google-auth
+get_best_package: google-auth
+pip install google-auth==1.11.3
+### Download packages ###
+download_best_package: hiredis
+get_best_package: hiredis
+pip install hiredis==1.0.1
+### Download packages ###
+download_best_package: hyperlink
+get_best_package: hyperlink
+pip install hyperlink==20.0.1
+### Download packages ###
+download_best_package: idna
+get_best_package: idna
+pip install idna==2.9
+### Download packages ###
+download_best_package: incremental
+get_best_package: incremental
+pip install incremental==17.5.0
+### Download packages ###
+download_best_package: irc
+get_best_package: irc
+pip install irc==18.0.0
+### Download packages ###
+download_best_package: isodate
+get_best_package: isodate
+pip install isodate==0.6.0
+### Download packages ###
+download_best_package: jaraco.classes
+get_best_package: jaraco.classes
+pip install jaraco.classes==3.1.0
+### Download packages ###
+download_best_package: jaraco.collections
+get_best_package: jaraco.collections
+pip install jaraco.collections==3.0.0
+### Download packages ###
+download_best_package: jaraco.functools
+get_best_package: jaraco.functools
+pip install jaraco.functools==3.0.0
+### Download packages ###
+download_best_package: jaraco.logging
+get_best_package: jaraco.logging
+pip install jaraco.logging==3.0.0
+### Download packages ###
+download_best_package: jaraco.stream
+get_best_package: jaraco.stream
+pip install jaraco.stream==3.0.0
+### Download packages ###
+download_best_package: jaraco.text
+get_best_package: jaraco.text
+pip install jaraco.text==3.2.0
+### Download packages ###
+download_best_package: jinja2
+get_best_package: jinja2
+pip install jinja2==2.11.2
+### Download packages ###
+download_best_package: json-log-formatter
+get_best_package: json-log-formatter
+pip install json-log-formatter==0.3.0
+### Download packages ###
+download_best_package: jsonschema
+get_best_package: jsonschema
+pip install jsonschema==3.2.0
+### Download packages ###
+download_best_package: kubernetes
+get_best_package: kubernetes
+pip install kubernetes==11.0.0
+### Download packages ###
+download_best_package: lockfile
+get_best_package: lockfileRequirement already satisfied: lockfile==0.12.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.12.2)
+Requirement already satisfied: lxml==4.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.5.0)
+Requirement already satisfied: markdown==3.2.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.2.1)
+Requirement already satisfied: setuptools>=36 in /root/awx-rpm/venv/lib/python3.8/site-packages (from markdown==3.2.1) (41.6.0)
+Requirement already satisfied: markupsafe==1.1.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.1)
+Requirement already satisfied: more-itertools==8.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (8.2.0)
+Requirement already satisfied: msgpack==1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.0)
+Requirement already satisfied: msrest==0.6.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.6.11)
+Requirement already satisfied: isodate>=0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest==0.6.11) (0.6.0)
+Requirement already satisfied: requests~=2.16 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest==0.6.11) (2.23.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest==0.6.11) (2021.5.30)
+Requirement already satisfied: requests-oauthlib>=0.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest==0.6.11) (1.3.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from isodate>=0.6.0->msrest==0.6.11) (1.14.0)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests~=2.16->msrest==0.6.11) (1.25.8)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests~=2.16->msrest==0.6.11) (2.9)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests~=2.16->msrest==0.6.11) (3.0.4)
+Requirement already satisfied: oauthlib>=3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib>=0.5.0->msrest==0.6.11) (3.1.0)
+Requirement already satisfied: msrestazure==0.6.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.6.3)
+Requirement already satisfied: adal<2.0.0,>=0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrestazure==0.6.3) (1.2.2)
+Requirement already satisfied: msrest<2.0.0,>=0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrestazure==0.6.3) (0.6.11)
+Requirement already satisfied: requests>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (2.23.0)
+Requirement already satisfied: PyJWT>=1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (2.1.0)
+Requirement already satisfied: python-dateutil>=2.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (2.8.1)
+Requirement already satisfied: cryptography>=1.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (2.9.2)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=1.1.0->adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (1.14.0)
+Requirement already satisfied: six>=1.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=1.1.0->adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography>=1.1.0->adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (2.20)
+Requirement already satisfied: isodate>=0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest<2.0.0,>=0.6.0->msrestazure==0.6.3) (0.6.0)
+Requirement already satisfied: requests-oauthlib>=0.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest<2.0.0,>=0.6.0->msrestazure==0.6.3) (1.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from msrest<2.0.0,>=0.6.0->msrestazure==0.6.3) (2021.5.30)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (2.9)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->adal<2.0.0,>=0.6.0->msrestazure==0.6.3) (1.25.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib>=0.5.0->msrest<2.0.0,>=0.6.0->msrestazure==0.6.3) (3.1.0)
+Requirement already satisfied: multidict==4.7.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.7.5)
+Requirement already satisfied: netaddr==0.7.19 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.7.19)
+Requirement already satisfied: oauthlib==3.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.1.0)
+Requirement already satisfied: openshift==0.11.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.11.0)
+Requirement already satisfied: dictdiffer in /root/awx-rpm/venv/lib/python3.8/site-packages (from openshift==0.11.0) (0.8.1)
+Requirement already satisfied: jinja2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from openshift==0.11.0) (2.11.2)
+Requirement already satisfied: kubernetes~=11.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from openshift==0.11.0) (11.0.0)
+Requirement already satisfied: python-string-utils in /root/awx-rpm/venv/lib/python3.8/site-packages (from openshift==0.11.0) (1.0.0)
+Requirement already satisfied: ruamel.yaml>=0.15 in /root/awx-rpm/venv/lib/python3.8/site-packages (from openshift==0.11.0) (0.16.10)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from openshift==0.11.0) (1.14.0)
+Requirement already satisfied: python-dateutil>=2.5.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (2.8.1)
+Requirement already satisfied: websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (0.57.0)
+Requirement already satisfied: urllib3>=1.24.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (1.25.8)
+Requirement already satisfied: setuptools>=21.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (41.6.0)
+Requirement already satisfied: requests-oauthlib in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (1.3.0)
+Requirement already satisfied: requests in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (2.23.0)
+Requirement already satisfied: pyyaml>=3.12 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (5.4.1)
+Requirement already satisfied: certifi>=14.05.14 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (2021.5.30)
+Requirement already satisfied: google-auth>=1.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from kubernetes~=11.0->openshift==0.11.0) (1.11.3)
+Requirement already satisfied: rsa<4.1,>=3.1.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth>=1.0.1->kubernetes~=11.0->openshift==0.11.0) (4.0)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth>=1.0.1->kubernetes~=11.0->openshift==0.11.0) (4.0.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from google-auth>=1.0.1->kubernetes~=11.0->openshift==0.11.0) (0.2.8)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth>=1.0.1->kubernetes~=11.0->openshift==0.11.0) (0.4.8)
+Requirement already satisfied: ruamel.yaml.clib>=0.1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from ruamel.yaml>=0.15->openshift==0.11.0) (0.2.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /root/awx-rpm/venv/lib/python3.8/site-packages (from jinja2->openshift==0.11.0) (1.1.1)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests->kubernetes~=11.0->openshift==0.11.0) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests->kubernetes~=11.0->openshift==0.11.0) (2.9)
+Requirement already satisfied: oauthlib>=3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib->kubernetes~=11.0->openshift==0.11.0) (3.1.0)
+Requirement already satisfied: pexpect==4.7.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.7.0)
+Requirement already satisfied: ptyprocess>=0.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pexpect==4.7.0) (0.6.0)
+Requirement already satisfied: pkgconfig==1.5.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.5.1)
+Requirement already satisfied: prometheus-client==0.7.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.7.1)
+Requirement already satisfied: psutil==5.8.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (5.8.0)
+Collecting psycopg2==2.8.4
+  Using cached psycopg2-2.8.4.tar.gz (377 kB)
+Building wheels for collected packages: psycopg2
+  Building wheel for psycopg2 (setup.py): started
+  Building wheel for psycopg2 (setup.py): finished with status 'done'
+  Created wheel for psycopg2: filename=psycopg2-2.8.4-cp38-cp38-linux_x86_64.whl size=503024 sha256=7227eb36227f16e3dbc7ea9dc87835a62afa52fb074e98683b27e5c5d525d3e6
+  Stored in directory: /root/.cache/pip/wheels/ac/07/3e/87adc95a2be1ee727bc54f487ce874bd6765ec9f206effb0df
+Successfully built psycopg2
+Installing collected packages: psycopg2
+Successfully installed psycopg2-2.8.4
+Requirement already satisfied: ptyprocess==0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.6.0)
+Requirement already satisfied: pyasn1-modules==0.2.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.2.8)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyasn1-modules==0.2.8) (0.4.8)
+Requirement already satisfied: pyasn1==0.4.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.4.8)
+Requirement already satisfied: pycparser==2.20 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.20)
+Requirement already satisfied: pygerduty==0.38.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.38.2)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from pygerduty==0.38.2) (1.14.0)
+Requirement already satisfied: pyhamcrest==2.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.0.2)
+Collecting pyjwt==1.7.1
+  Using cached PyJWT-1.7.1-py2.py3-none-any.whl (18 kB)
+Installing collected packages: pyjwt
+  Attempting uninstall: pyjwt
+    Found existing installation: PyJWT 2.1.0
+    Uninstalling PyJWT-2.1.0:
+      Successfully uninstalled PyJWT-2.1.0
+Successfully installed pyjwt-1.7.1
+Requirement already satisfied: pyopenssl==19.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (19.1.0)
+Requirement already satisfied: cryptography>=2.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyopenssl==19.1.0) (2.9.2)
+Requirement already satisfied: six>=1.5.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyopenssl==19.1.0) (1.14.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=2.8->pyopenssl==19.1.0) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography>=2.8->pyopenssl==19.1.0) (2.20)
+Requirement already satisfied: pyparsing==2.4.6 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.4.6)
+Requirement already satisfied: pyrad==2.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.3)
+Requirement already satisfied: netaddr in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyrad==2.3) (0.7.19)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyrad==2.3) (1.14.0)
+Requirement already satisfied: pyrsistent==0.15.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.15.7)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from pyrsistent==0.15.7) (1.14.0)
+Requirement already satisfied: python-daemon==2.2.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.2.4)
+Requirement already satisfied: docutils in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-daemon==2.2.4) (0.16)
+Requirement already satisfied: lockfile>=0.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-daemon==2.2.4) (0.12.2)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-daemon==2.2.4) (41.6.0)
+Requirement already satisfied: python-dateutil==2.8.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.8.1)
+Requirement already satisfied: six>=1.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-dateutil==2.8.1) (1.14.0)
+Requirement already satisfied: python-ldap==3.3.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.3.1)
+Requirement already satisfied: pyasn1-modules>=0.1.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-ldap==3.3.1) (0.2.8)
+Requirement already satisfied: pyasn1>=0.3.7 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-ldap==3.3.1) (0.4.8)
+Requirement already satisfied: python-string-utils==1.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.0)
+Requirement already satisfied: python3-openid==3.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.1.0)
+Requirement already satisfied: defusedxml in /root/awx-rpm/venv/lib/python3.8/site-packages (from python3-openid==3.1.0) (0.6.0)
+Collecting python3-saml==1.9.0
+  Using cached python3_saml-1.9.0-py3-none-any.whl (72 kB)
+Collecting xmlsec>=0.6.0
+  Using cached xmlsec-1.3.11.tar.gz (61 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already satisfied: isodate>=0.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python3-saml==1.9.0) (0.6.0)
+Requirement already satisfied: defusedxml>=0.5.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python3-saml==1.9.0) (0.6.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from isodate>=0.5.0->python3-saml==1.9.0) (1.14.0)
+Requirement already satisfied: lxml>=3.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from xmlsec>=0.6.0->python3-saml==1.9.0) (4.5.0)
+Building wheels for collected packages: xmlsec
+  Building wheel for xmlsec (PEP 517): started
+  Building wheel for xmlsec (PEP 517): finished with status 'done'
+  Created wheel for xmlsec: filename=xmlsec-1.3.11-cp38-cp38-linux_x86_64.whl size=189330 sha256=c0864a59438847e4e81da93402870bd4be9452d333b1aaf18a299b2a8175f9aa
+  Stored in directory: /root/.cache/pip/wheels/d2/d5/b5/ba904a9e51a751ef1498bc90437256f655e606772ddc0497a2
+Successfully built xmlsec
+Installing collected packages: xmlsec, python3-saml
+Successfully installed python3-saml-1.9.0 xmlsec-1.3.11
+Requirement already satisfied: pytz==2019.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (2019.3)
+Requirement already satisfied: pyyaml==5.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (5.4.1)
+Requirement already satisfied: receptorctl==1.0.0.0a2 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0.0.0a2)
+Requirement already satisfied: pyyaml in /root/awx-rpm/venv/lib/python3.8/site-packages (from receptorctl==1.0.0.0a2) (5.4.1)
+Requirement already satisfied: python-dateutil in /root/awx-rpm/venv/lib/python3.8/site-packages (from receptorctl==1.0.0.0a2) (2.8.1)
+Requirement already satisfied: click in /root/awx-rpm/venv/lib/python3.8/site-packages (from receptorctl==1.0.0.0a2) (7.1.2)
+Requirement already satisfied: six>=1.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from python-dateutil->receptorctl==1.0.0.0a2) (1.14.0)
+Requirement already satisfied: redis==3.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.4.1)
+Requirement already satisfied: requests-oauthlib==1.3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.3.0)
+Requirement already satisfied: oauthlib>=3.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib==1.3.0) (3.1.0)
+Requirement already satisfied: requests>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests-oauthlib==1.3.0) (2.23.0)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->requests-oauthlib==1.3.0) (2.9)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->requests-oauthlib==1.3.0) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->requests-oauthlib==1.3.0) (2021.5.30)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->requests-oauthlib==1.3.0) (1.25.8)
+Requirement already satisfied: requests==2.23.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.23.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests==2.23.0) (2021.5.30)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests==2.23.0) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests==2.23.0) (2.9)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests==2.23.0) (1.25.8)
+Requirement already satisfied: rsa==4.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (4.0)
+Requirement already satisfied: pyasn1>=0.1.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from rsa==4.0) (0.4.8)
+Requirement already satisfied: ruamel.yaml.clib==0.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.2.0)
+Requirement already satisfied: ruamel.yaml==0.16.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.16.10)
+Requirement already satisfied: ruamel.yaml.clib>=0.1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from ruamel.yaml==0.16.10) (0.2.0)
+Requirement already satisfied: schedule==0.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.6.0)
+Requirement already satisfied: service-identity==18.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (18.1.0)
+Requirement already satisfied: cryptography in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity==18.1.0) (2.9.2)
+Requirement already satisfied: pyasn1-modules in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity==18.1.0) (0.2.8)
+Requirement already satisfied: attrs>=16.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity==18.1.0) (19.3.0)
+Requirement already satisfied: pyasn1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from service-identity==18.1.0) (0.4.8)
+Requirement already satisfied: six>=1.4.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography->service-identity==18.1.0) (1.14.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography->service-identity==18.1.0) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography->service-identity==18.1.0) (2.20)
+Requirement already satisfied: six==1.14.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.14.0)
+Requirement already satisfied: slackclient==1.1.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.1.2)
+Requirement already satisfied: websocket-client<1.0a0,>=0.35 in /root/awx-rpm/venv/lib/python3.8/site-packages (from slackclient==1.1.2) (0.57.0)
+Requirement already satisfied: requests<3.0a0,>=2.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (from slackclient==1.1.2) (2.23.0)
+Requirement already satisfied: six<2.0a0,>=1.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (from slackclient==1.1.2) (1.14.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests<3.0a0,>=2.11->slackclient==1.1.2) (2021.5.30)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests<3.0a0,>=2.11->slackclient==1.1.2) (1.25.8)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests<3.0a0,>=2.11->slackclient==1.1.2) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests<3.0a0,>=2.11->slackclient==1.1.2) (2.9)
+Requirement already satisfied: smmap==3.0.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.0.1)
+Requirement already satisfied: social-auth-app-django==3.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.1.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-app-django==3.1.0) (1.14.0)
+Requirement already satisfied: social-auth-core>=1.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-app-django==3.1.0) (3.3.1)
+Requirement already satisfied: PyJWT>=1.4.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (1.7.1)
+Requirement already satisfied: requests-oauthlib>=0.6.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (1.3.0)
+Requirement already satisfied: oauthlib>=1.0.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (3.1.0)
+Requirement already satisfied: defusedxml>=0.5.0rc1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (0.6.0)
+Requirement already satisfied: python3-openid>=3.0.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (3.1.0)
+Requirement already satisfied: cryptography>=1.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (2.9.2)
+Requirement already satisfied: requests>=2.9.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (2.23.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=1.4->social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography>=1.4->social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (2.20)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (2021.5.30)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (1.25.8)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core>=1.2.0->social-auth-app-django==3.1.0) (2.9)
+Requirement already satisfied: social-auth-core==3.3.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (3.3.1)
+Requirement already satisfied: cryptography>=1.4 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (2.9.2)
+Requirement already satisfied: PyJWT>=1.4.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (1.7.1)
+Requirement already satisfied: requests>=2.9.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (2.23.0)
+Requirement already satisfied: requests-oauthlib>=0.6.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (1.3.0)
+Requirement already satisfied: python3-openid>=3.0.10 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (3.1.0)
+Requirement already satisfied: oauthlib>=1.0.3 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (3.1.0)
+Requirement already satisfied: six>=1.10.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (1.14.0)
+Requirement already satisfied: defusedxml>=0.5.0rc1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from social-auth-core==3.3.1) (0.6.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (from cryptography>=1.4->social-auth-core==3.3.1) (1.14.0)
+Requirement already satisfied: pycparser in /root/awx-rpm/venv/lib/python3.8/site-packages (from cffi!=1.11.3,>=1.8->cryptography>=1.4->social-auth-core==3.3.1) (2.20)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core==3.3.1) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core==3.3.1) (1.25.8)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core==3.3.1) (2.9)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.9.1->social-auth-core==3.3.1) (2021.5.30)
+Requirement already satisfied: sqlparse==0.3.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.3.1)
+Requirement already satisfied: tacacs_plus==1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from tacacs_plus==1.0) (1.14.0)
+Requirement already satisfied: tempora==2.1.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (2.1.0)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from tempora==2.1.0) (2019.3)
+Requirement already satisfied: jaraco.functools>=1.20 in /root/awx-rpm/venv/lib/python3.8/site-packages (from tempora==2.1.0) (3.0.0)
+Requirement already satisfied: more-itertools in /root/awx-rpm/venv/lib/python3.8/site-packages (from jaraco.functools>=1.20->tempora==2.1.0) (8.2.0)
+Requirement already satisfied: twilio==6.37.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (6.37.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from twilio==6.37.0) (1.14.0)
+Requirement already satisfied: pytz in /root/awx-rpm/venv/lib/python3.8/site-packages (from twilio==6.37.0) (2019.3)
+Requirement already satisfied: PyJWT>=1.4.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twilio==6.37.0) (1.7.1)
+Requirement already satisfied: requests>=2.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twilio==6.37.0) (2.23.0)
+Requirement already satisfied: chardet<4,>=3.0.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->twilio==6.37.0) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->twilio==6.37.0) (1.25.8)
+Requirement already satisfied: idna<3,>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->twilio==6.37.0) (2.9)
+Requirement already satisfied: certifi>=2017.4.17 in /root/awx-rpm/venv/lib/python3.8/site-packages (from requests>=2.0.0->twilio==6.37.0) (2021.5.30)
+Collecting twisted==20.3.0
+  Using cached Twisted-20.3.0.tar.bz2 (3.1 MB)
+Requirement already satisfied: zope.interface>=4.4.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (5.0.0)
+Requirement already satisfied: constantly>=15.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (15.1.0)
+Requirement already satisfied: incremental>=16.10.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (17.5.0)
+Requirement already satisfied: Automat>=0.3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (20.2.0)
+Requirement already satisfied: hyperlink>=17.1.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (20.0.1)
+Requirement already satisfied: PyHamcrest!=1.10.0,>=1.9.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (2.0.2)
+Requirement already satisfied: attrs>=19.2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from twisted==20.3.0) (19.3.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from Automat>=0.3.0->twisted==20.3.0) (1.14.0)
+Requirement already satisfied: idna>=2.5 in /root/awx-rpm/venv/lib/python3.8/site-packages (from hyperlink>=17.1.1->twisted==20.3.0) (2.9)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from zope.interface>=4.4.2->twisted==20.3.0) (41.6.0)
+Building wheels for collected packages: twisted
+  Building wheel for twisted (setup.py): started
+  Building wheel for twisted (setup.py): finished with status 'done'
+  Created wheel for twisted: filename=Twisted-20.3.0-cp38-cp38-linux_x86_64.whl size=3088175 sha256=78777ad9316eefbacb027265f88e8899d54831fa6f4697690268039740ebd201
+  Stored in directory: /root/.cache/pip/wheels/f2/36/1b/99fe6d339e1559e421556c69ad7bc8c869145e86a756c403f4
+Successfully built twisted
+Installing collected packages: twisted
+  Attempting uninstall: twisted
+    Found existing installation: Twisted 21.2.0
+    Uninstalling Twisted-21.2.0:
+      Successfully uninstalled Twisted-21.2.0
+Successfully installed twisted-20.3.0
+Requirement already satisfied: txaio==20.12.1 in /root/awx-rpm/venv/lib/python3.8/site-packages (20.12.1)
+Requirement already satisfied: urllib3==1.25.8 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.25.8)
+Collecting uwsgi==2.0.18
+  Using cached uwsgi-2.0.18.tar.gz (801 kB)
+Building wheels for collected packages: uwsgi
+  Building wheel for uwsgi (setup.py): started
+  Building wheel for uwsgi (setup.py): finished with status 'done'
+  Created wheel for uwsgi: filename=uWSGI-2.0.18-cp38-cp38-linux_x86_64.whl size=511886 sha256=2184577805faa341c7d2ecb7953bb1331d09f8e67fe2aaa67dd90467f3e9f550
+  Stored in directory: /root/.cache/pip/wheels/48/07/77/7996e2077b5ab7ee02928e2338a970e18091bac789c62932c1
+Successfully built uwsgi
+Installing collected packages: uwsgi
+Successfully installed uwsgi-2.0.18
+Requirement already satisfied: uwsgitop==0.11 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.11)
+Requirement already satisfied: websocket-client==0.57.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.57.0)
+Requirement already satisfied: six in /root/awx-rpm/venv/lib/python3.8/site-packages (from websocket-client==0.57.0) (1.14.0)
+Requirement already satisfied: wheel==0.36.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (0.36.2)
+Collecting xmlsec==1.3.3
+  Using cached xmlsec-1.3.3.tar.gz (29 kB)
+Requirement already satisfied: pkgconfig in /root/awx-rpm/venv/lib/python3.8/site-packages (from xmlsec==1.3.3) (1.5.1)
+Requirement already satisfied: lxml>=3.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from xmlsec==1.3.3) (4.5.0)
+Building wheels for collected packages: xmlsec
+  Building wheel for xmlsec (setup.py): started
+  Building wheel for xmlsec (setup.py): finished with status 'done'
+  Created wheel for xmlsec: filename=xmlsec-1.3.3-cp38-cp38-linux_x86_64.whl size=179457 sha256=63465b7bbca9f2ac0fbc880fbe808dc7a2ad6fb63e824c896c36ae35f343ff2e
+  Stored in directory: /root/.cache/pip/wheels/ae/46/c1/b52b974285db8279ac2e43f80549737b68a6cfa1678d9f357d
+Successfully built xmlsec
+Installing collected packages: xmlsec
+  Attempting uninstall: xmlsec
+    Found existing installation: xmlsec 1.3.11
+    Uninstalling xmlsec-1.3.11:
+      Successfully uninstalled xmlsec-1.3.11
+Successfully installed xmlsec-1.3.3
+Requirement already satisfied: yarl==1.4.2 in /root/awx-rpm/venv/lib/python3.8/site-packages (1.4.2)
+Requirement already satisfied: idna>=2.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from yarl==1.4.2) (2.9)
+Requirement already satisfied: multidict>=4.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (from yarl==1.4.2) (4.7.5)
+Requirement already satisfied: zope.interface==5.0.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (5.0.0)
+Requirement already satisfied: setuptools in /root/awx-rpm/venv/lib/python3.8/site-packages (from zope.interface==5.0.0) (41.6.0)
+Collecting pip==19.3.1
+  Using cached pip-19.3.1-py2.py3-none-any.whl (1.4 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.1.2
+    Uninstalling pip-21.1.2:
+      Successfully uninstalled pip-21.1.2
+Successfully installed pip-19.3.1
+Requirement already satisfied: setuptools==41.6.0 in /root/awx-rpm/venv/lib/python3.8/site-packages (41.6.0)
+WARNING: You are using pip version 19.3.1; however, version 21.1.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+
+pip install lockfile==0.12.2
+### Download packages ###
+download_best_package: lxml
+get_best_package: lxml
+pip install lxml==4.5.0
+### Download packages ###
+download_best_package: markdown
+get_best_package: markdown
+pip install markdown==3.2.1
+### Download packages ###
+download_best_package: markupsafe
+get_best_package: markupsafe
+pip install markupsafe==1.1.1
+### Download packages ###
+download_best_package: more-itertools
+get_best_package: more-itertools
+pip install more-itertools==8.2.0
+### Download packages ###
+download_best_package: msgpack
+get_best_package: msgpack
+pip install msgpack==1.0.0
+### Download packages ###
+download_best_package: msrest
+get_best_package: msrest
+pip install msrest==0.6.11
+### Download packages ###
+download_best_package: msrestazure
+get_best_package: msrestazure
+pip install msrestazure==0.6.3
+### Download packages ###
+download_best_package: multidict
+get_best_package: multidict
+pip install multidict==4.7.5
+### Download packages ###
+download_best_package: netaddr
+get_best_package: netaddr
+pip install netaddr==0.7.19
+### Download packages ###
+download_best_package: oauthlib
+get_best_package: oauthlib
+pip install oauthlib==3.1.0
+### Download packages ###
+download_best_package: openshift
+get_best_package: openshift
+pip install openshift==0.11.0
+### Download packages ###
+download_best_package: pexpect
+get_best_package: pexpect
+pip install pexpect==4.7.0
+### Download packages ###
+download_best_package: pkgconfig
+get_best_package: pkgconfig
+pip install pkgconfig==1.5.1
+### Download packages ###
+download_best_package: prometheus-client
+get_best_package: prometheus-client
+pip install prometheus-client==0.7.1
+### Download packages ###
+download_best_package: psutil
+get_best_package: psutil
+pip install psutil==5.8.0
+### Download packages ###
+download_best_package: psycopg2
+get_best_package: psycopg2
+pip install psycopg2==2.8.4
+### Download packages ###
+download_best_package: ptyprocess
+get_best_package: ptyprocess
+pip install ptyprocess==0.6.0
+### Download packages ###
+download_best_package: pyasn1-modules
+get_best_package: pyasn1-modules
+pip install pyasn1-modules==0.2.8
+### Download packages ###
+download_best_package: pyasn1
+get_best_package: pyasn1
+pip install pyasn1==0.4.8
+### Download packages ###
+download_best_package: pycparser
+get_best_package: pycparser
+pip install pycparser==2.20
+### Download packages ###
+download_best_package: pygerduty
+get_best_package: pygerduty
+pip install pygerduty==0.38.2
+### Download packages ###
+download_best_package: pyhamcrest
+get_best_package: pyhamcrest
+pip install pyhamcrest==2.0.2
+### Download packages ###
+download_best_package: pyjwt
+get_best_package: pyjwt
+pip install pyjwt==1.7.1
+### Download packages ###
+download_best_package: pyopenssl
+get_best_package: pyopenssl
+pip install pyopenssl==19.1.0
+### Download packages ###
+download_best_package: pyparsing
+get_best_package: pyparsing
+pip install pyparsing==2.4.6
+### Download packages ###
+download_best_package: pyrad
+get_best_package: pyrad
+pip install pyrad==2.3
+### Download packages ###
+download_best_package: pyrsistent
+get_best_package: pyrsistent
+pip install pyrsistent==0.15.7
+### Download packages ###
+download_best_package: python-daemon
+get_best_package: python-daemon
+pip install python-daemon==2.2.4
+### Download packages ###
+download_best_package: python-dateutil
+get_best_package: python-dateutil
+pip install python-dateutil==2.8.1
+### Download packages ###
+download_best_package: python-ldap
+get_best_package: python-ldap
+pip install python-ldap==3.3.1
+### Download packages ###
+download_best_package: python-string-utils
+get_best_package: python-string-utils
+pip install python-string-utils==1.0.0
+### Download packages ###
+download_best_package: python3-openid
+get_best_package: python3-openid
+pip install python3-openid==3.1.0
+### Download packages ###
+download_best_package: python3-saml
+get_best_package: python3-saml
+pip install python3-saml==1.9.0
+### Download packages ###
+download_best_package: pytz
+get_best_package: pytz
+pip install pytz==2019.3
+### Download packages ###
+download_best_package: pyyaml
+get_best_package: pyyaml
+pip install pyyaml==5.4.1
+### Download packages ###
+download_best_package: receptorctl
+get_best_package: receptorctl
+pip install receptorctl==1.0.0.0a2
+### Download packages ###
+download_best_package: redis
+get_best_package: redis
+pip install redis==3.4.1
+### Download packages ###
+download_best_package: requests-oauthlib
+get_best_package: requests-oauthlib
+pip install requests-oauthlib==1.3.0
+### Download packages ###
+download_best_package: requests
+get_best_package: requests
+pip install requests==2.23.0
+### Download packages ###
+download_best_package: rsa
+get_best_package: rsa
+pip install rsa==4.0
+### Download packages ###
+download_best_package: ruamel.yaml.clib
+get_best_package: ruamel.yaml.clib
+pip install ruamel.yaml.clib==0.2.0
+### Download packages ###
+download_best_package: ruamel.yaml
+get_best_package: ruamel.yaml
+pip install ruamel.yaml==0.16.10
+### Download packages ###
+download_best_package: schedule
+get_best_package: schedule
+pip install schedule==0.6.0
+### Download packages ###
+download_best_package: service-identity
+get_best_package: service-identity
+pip install service-identity==18.1.0
+### Download packages ###
+download_best_package: six
+get_best_package: six
+pip install six==1.14.0
+### Download packages ###
+download_best_package: slackclient
+get_best_package: slackclient
+pip install slackclient==1.1.2
+### Download packages ###
+download_best_package: smmap
+get_best_package: smmap
+pip install smmap==3.0.1
+### Download packages ###
+download_best_package: social-auth-app-django
+get_best_package: social-auth-app-django
+pip install social-auth-app-django==3.1.0
+### Download packages ###
+download_best_package: social-auth-core
+get_best_package: social-auth-core
+pip install social-auth-core==3.3.1
+### Download packages ###
+download_best_package: sqlparse
+get_best_package: sqlparse
+pip install sqlparse==0.3.1
+### Download packages ###
+download_best_package: tacacs_plus
+get_best_package: tacacs_plus
+pip install tacacs_plus==1.0
+### Download packages ###
+download_best_package: tempora
+get_best_package: tempora
+pip install tempora==2.1.0
+### Download packages ###
+download_best_package: twilio
+get_best_package: twilio
+pip install twilio==6.37.0
+### Download packages ###
+download_best_package: twisted
+get_best_package: twisted
+Downloading: https://files.pythonhosted.org/packages/4a/b4/4973c7ccb5be2ec0abc779b7d5f9d5f24b17b0349e23240cfc9dc3bd83cc/Twisted-20.3.0.tar.bz2
+pip install twisted==20.3.0
+### Download packages ###
+download_best_package: txaio
+get_best_package: txaio
+pip install txaio==20.12.1
+### Download packages ###
+download_best_package: urllib3
+get_best_package: urllib3
+pip install urllib3==1.25.8
+### Download packages ###
+download_best_package: uwsgi
+get_best_package: uwsgi
+pip install uwsgi==2.0.18
+### Download packages ###
+download_best_package: uwsgitop
+get_best_package: uwsgitop
+pip install uwsgitop==0.11
+### Download packages ###
+download_best_package: websocket-client
+get_best_package: websocket-client
+pip install websocket-client==0.57.0
+### Download packages ###
+download_best_package: wheel
+get_best_package: wheel
+pip install wheel==0.36.2
+### Download packages ###
+download_best_package: xmlsec
+get_best_package: xmlsec
+pip install xmlsec==1.3.3
+### Download packages ###
+download_best_package: yarl
+get_best_package: yarl
+pip install yarl==1.4.2
+### Download packages ###
+download_best_package: zope.interface
+get_best_package: zope.interface
+pip install zope.interface==5.0.0
+### Download packages ###
+download_best_package: pip
+get_best_package: pip
+pip install pip==19.3.1
+### Download packages ###
+download_best_package: setuptools
+get_best_package: setuptools
+pip install setuptools==41.6.0
+### The end ###
