@@ -42,7 +42,10 @@ def download_package(package_name, specifier='', path=PACKAGES_DIR):
         open(dest, 'wb').write(r.content)
         shutil.unpack_archive(dest, f'{path}/{package_name}')
         extracted = dest.rstrip('.tar.gz')
-        os.rename(extracted, extracted.lower())
+        try:    
+            os.rename(extracted, extracted.lower())
+        except:
+            return
 
 def get_best_package(package_name, specifier=''):
     print(f'get_best_package: {package_name}')
@@ -78,8 +81,6 @@ def fetch_all_from_source():
     print("### In fetch_all_from_source ###")
     resp = requests.get(SOURCE_URL)
     pkgs = resp.text
-    print(pkgs)
-
     packages = []
     for pkg in requirements.parse(pkgs):
         packages.append({
@@ -87,7 +88,6 @@ def fetch_all_from_source():
             'specifier': pkg.specs[0][0] if pkg.specs else '',
             'version': pkg.specs[0][1] if pkg.specs else ''
         })
-
     return packages
 
 
@@ -101,18 +101,29 @@ def download_all_packages():
 
 
 if __name__ == '__main__':
-   print("Start")
    print("### In fetch_all_from_source ###")
    resp = requests.get(SOURCE_URL)
    pkgs = resp.text
    for pkg in requirements.parse(pkgs):
            name      = pkg.name
-           print("### Download packages ###")
            target = "%s%s" % (pkg.specs[0][0], pkg.specs[0][1])
            download_package(name, target)
            pipinstall = "pip install %s%s" % (name, target)
-           print(pipinstall)
            os.system(pipinstall)
+   cmd = "python -m pip freeze >requirements.full.txt"
+   os.system(cmd)
+   f = open("requirements.full.txt", "r")
+   pkgs = f.read()
+   for pkg in requirements.parse(pkgs):
+           name      = pkg.name.lower()
+           target = "%s%s" % (pkg.specs[0][0], pkg.specs[0][1])
+           try:
+               download_package(name, target)
+           except:
+               print("Already downloaded")
+           pipinstall = "pip install %s%s" % (name, target)
+
+
 
 
    print("### The end ###")

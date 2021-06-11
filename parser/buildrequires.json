@@ -1960,6 +1960,86 @@
                 "specifier": ""
             }
 	]
+    },
+    "click": {
+        "name": "click",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    }, 
+    "cython": {
+        "name": "cython",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    },
+    "distro": {
+        "name": "distro",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    },
+    "django-guid": {
+        "name": "django-guid",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    },
+    "json-log-formatter": {
+        "name": "json-log-formatter",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    },
+    "receptorctl": {
+        "name": "receptorctl",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    },
+    "wheel": {
+        "name": "wheel",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
+    },
+    "colorama": {
+        "name": "colorama",
+        "buildrequires": [
+            {
+                "name": "python36-devel",
+                "version": "",
+                "specifier": ""
+            }
+	]
     }
 }
 
