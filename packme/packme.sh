@@ -42,6 +42,7 @@ function create_clean_pip {
 function pip_addons {
       pip install django-debug-toolbar
       pip install sphinx sphinxcontrib-autoprogram
+      pip install awxkit
       }
 
 
