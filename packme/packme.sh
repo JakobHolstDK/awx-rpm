@@ -39,6 +39,13 @@ function create_clean_pip {
 
 }
 
+function pip_addons {
+      pip install django-debug-toolbar
+      pip install sphinx sphinxcontrib-autoprogram
+      }
+
+
+
 cd $mypath
 if [[ $? == 0 ]];
 then
@@ -55,6 +62,8 @@ create_clean_pip
 
 logme "Fetch packages"
 cd $mypath/parser &&  ./fetch_specific_packages.py
+pip_addons
+
 
 
 exit
