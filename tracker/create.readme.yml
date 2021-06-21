@@ -1,0 +1,9 @@
+---
+- name: Update readme
+  hosts: localhost
+  tasks:
+    - name: Create readme.md
+      template:
+        src: README.md
+        dest: README.md
+
