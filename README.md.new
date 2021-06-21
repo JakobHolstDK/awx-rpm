@@ -1,4 +1,4 @@
-![AWX logo](https://miro.medium.com/max/1118/1*t6VfibBUce2i6uPQoyBfDQ.png)
+![AWX logo](ihttps://github.com/JakobHolstDK/awx-rpm/blob/master/angrypotato.png)
 
 # AWX-RPM
 > A fully maintained rpm installable awx 
